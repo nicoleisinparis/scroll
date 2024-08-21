@@ -1,0 +1,319 @@
+body {
+  font-family: "TS-Reg";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 54px;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.nav-main p {
+  font-family: "TS-Reg";
+  font-size: 18px;
+}
+.block-left p {
+  font-size: 17px;
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+h5,
+.divertir > div:first-child p {
+  font-size: 18px;
+}
+.divertir > div:first-child p {
+  padding-bottom: 20px;
+}
+.divertir a {
+  padding-top: 20px;
+  font-size: 16px;
+}
+.individual-photo > p {
+  font-size: 14px;
+}
+.rate p {
+  margin: 0 10px;
+  font-size: 12px;
+}
+.container {
+  border: 1px solid red;
+  width: 1024px;
+  margin: 0 auto;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+/* this is make the top menu sticks on the top
+header {
+  position: sticky;
+  top: 0px;
+} */
+header img {
+  width: 180px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.nav-main {
+  display: flex;
+  margin-right: 4px;
+}
+.fa-solid {
+  display: flex;
+  align-items: center;
+}
+.nav-main i {
+  margin-left: 10px;
+}
+header button {
+  /* height: 40px;
+  width: 130px; */
+  background-color: black;
+  color: white;
+  font-family: "TS-Reg";
+  font-weight: bold;
+  border-radius: 22px;
+  border: none;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+main nav {
+  display: flex;
+  height: 66px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 20px;
+}
+.nav-2nd > div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 14px;
+  padding: 12px 15px;
+  flex: 1;
+  /* overflow: scroll; */
+}
+
+/* 3photos */
+
+.photos {
+  display: flex;
+  height: 430px;
+  gap: 2px;
+}
+.photos > img {
+  object-fit: cover;
+}
+.photos div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.photos > div img {
+  height: calc(50% - 1px);
+  width: 100%;
+  object-fit: cover;
+}
+/* words under photos */
+.files div {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  gap: 8px;
+}
+.container span:last-child {
+  margin-left: auto;
+  text-align: right;
+}
+.files span {
+  text-decoration: none;
+  font-size: small;
+}
+.files a:hover {
+  text-decoration: underline;
+}
+
+/* 3RD PART */
+
+.description {
+  display: flex;
+}
+.block-left {
+  width: 547px;
+  height: 472px;
+  text-align: justify;
+}
+.block-right {
+  width: 428px;
+  height: 400px;
+  background-color: #ff5d5d;
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  padding: 32px;
+  border-radius: 15px;
+  position: relative;
+}
+.block-right > img {
+  width: 433px;
+  height: 190px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 154px;
+  height: 54px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(102, 30, 30);
+}
+
+/* ============scroll=============== */
+.divertir {
+  display: flex;
+}
+.divertir > div:first-child {
+  flex: 1;
+}
+.scroll-photo {
+  display: flex;
+  justify-content: center;
+  flex: 3;
+  overflow: scroll;
+  gap: 15px;
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+}
+/* hide scrollbar for chrome, safari, opera*/
+.scroll-photo::-webkit-scrollbar {
+  display: none;
+}
+.scroll-photo figure {
+  width: 100%;
+}
+figure {
+  position: relative;
+}
+.heart i {
+  /* icon size*/
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.award {
+  width: 30px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+
+.rate {
+  display: flex;
+  gap: 2px;
+  margin: 10px 0;
+}
+.rate > i {
+  color: #04aa6c;
+}
+
+/* .individual-photo 不要因為東西多自己變小 這樣才能scroll的動*/
+.individual-photo {
+  width: calc(33% - 10px);
+  flex-shrink: 0;
+}
+
+.individual-photo figure {
+  width: 100%;
+}
+/* .individual-photo填滿上面的空間*/
+.individual-photo img:first-child {
+  width: 100%;
+  height: 198px;
+  object-fit: cover;
+} /*最後2行 是要讓照片管什麼size 限制他不能超過的數值 然後完整覆蓋*/
+
+.hidden {
+  display: none;
+}
+
+/*-------------------------------------------------------
+------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 990px) {
+  .nav-main p {
+    display: none;
+    margin-right: 8px;
+    margin-left: 4px;
+  }
+  .nav-main {
+    font-size: 24px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .hidden {
+    display: flex;
+  }
+  .nav-2nd {
+    display: flex;
+    /* flex: wrap; */
+  }
+  .nav-2nd > div {
+    width: calc(25% - 7.5px);
+    /* overflow: scroll; */
+    /* flex: wrap; */
+  }
+}
+
+@media (max-width: 768px) {
+  header .hidden {
+    display: flex;
+  }
+  header img {
+    width: 132px;
+  }
+  .masked {
+    display: none;
+  }
+}
